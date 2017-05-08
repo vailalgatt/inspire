@@ -3,26 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inspire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|News+Cycle" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="body">
-	<div id="weather">
-		Your Weather Template
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+		<div id="weather">
+			Your Weather Template
+		</div>
+		</div>
+		<div class="col-xs-12">
+		<div id="quote">
+			The Quote
+		</div>
+		</div>
+		<div class="col-xs-12">
+		<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+			<legend>To Do List:</legend>
+			<input type="text" name="todo" value="">
+		</form>
+		<div id="todo">
+		</div>
+		</div>
+		</div>
 	</div>
-
-	<div id="quote">
-		The Quote
-	</div>
-
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
-	</div>
-
-
-
-
 	<!--JS Libraries-->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<!--Services-->
