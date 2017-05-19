@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|News+Cycle" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|News+Cycle" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -12,23 +12,33 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-		<div id="weather">
-			Your Weather Template
-		</div>
-		</div>
-		<div class="col-xs-12">
-		<div id="quote">
-			The Quote
-		</div>
-		</div>
-		<div class="col-xs-12">
-		<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
-			<legend>To Do List:</legend>
-			<input type="text" name="todo" value="">
-		</form>
-		<div id="todo">
-		</div>
-		</div>
+				<div id="time">
+
+				</div>
+				<div class="col-xs-12">
+					<div id="weather">
+						Your Weather Template
+						<button type="button">Weather</button>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div id="quote">
+						The Quote
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<div id="clock" class="clock"></div>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+						<h3>Daily Objectives (<span id="num-items"></span>):</h3>
+						<input type="text" name="todo" id="todo" placeholder="Task here + Enter...">
+					</form>
+					<div id="todoHere"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!--JS Libraries-->
@@ -44,6 +54,7 @@
 	<script src="app/components/image/image-controller.js"></script>
 	<script src="app/components/quote/quote-controller.js"></script>
 	<script src="app/components/todo/todo-controller.js"></script>
+	<script src="app/components/clock/clock-controller.js"></script>
 
 	<!--Initialize App-->
 	<script src="app/init.js"></script>
