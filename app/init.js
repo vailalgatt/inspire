@@ -5,5 +5,5 @@ var app = {
     quoteController: new QuoteController(),
     todoController: new TodoController(),
     clockControler: new ClockController()
-  }
+    }
 }
